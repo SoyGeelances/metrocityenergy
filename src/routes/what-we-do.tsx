@@ -1,8 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImage from "../assets/grid-modernization.jpg";
-import solarImage from "../assets/renewable-integration.jpg";
-import storageImage from "../assets/energy-storage.jpg";
+
 import { ContactBand, PageHero } from "../components/site-chrome";
+
+const heroImage = "/assets/grid-modernization.jpg";
+const solarImage = "/assets/renewable-integration.jpg";
+const storageImage = "/assets/energy-storage.jpg";
 
 export const Route = createFileRoute("/what-we-do")({
   head: () => ({ meta: [
