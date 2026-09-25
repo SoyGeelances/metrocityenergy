@@ -2,7 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useState, type ReactNode } from "react";
 
-import logo from "../assets/metro-city-energy-logo-new.svg";
+const logo = "/logo-metro-city-energy.webp";
 
 const navItems = [
   { label: "Home", to: "/" },

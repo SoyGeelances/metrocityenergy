@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import heroImage from "../assets/renewable-integration.jpg";
+
 import { ContactBand, NumberedItem, PageHero } from "../components/site-chrome";
+
+const heroImage = "/assets/renewable-integration.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({ meta: [

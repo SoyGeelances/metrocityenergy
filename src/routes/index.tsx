@@ -1,11 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 
-import heroImage from "../assets/metro-energy-hero.jpg";
-import gridImage from "../assets/grid-modernization.jpg";
-import solarImage from "../assets/renewable-integration.jpg";
-import storageImage from "../assets/energy-storage.jpg";
 import { ContactBand } from "../components/site-chrome";
+
+const heroImage = "/assets/metro-energy-hero.jpg";
+const gridImage = "/assets/grid-modernization.jpg";
+const solarImage = "/assets/renewable-integration.jpg";
+const storageImage = "/assets/energy-storage.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
