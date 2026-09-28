@@ -9,6 +9,7 @@ on:
 jobs:
   deploy-production:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,22 +34,26 @@ jobs:
           path: .output/
           if-no-files-found: error
 
-      - name: Deploy via SSH
+      - name: Deploy build via SSH
         uses: appleboy/scp-action@v0.1.10
         with:
-          host: ${{ secrets.PRODUCTION_HOST }}
-          username: ${{ secrets.PRODUCTION_USER }}
+          host: ${{ secrets.PRODUCTION_SSH_HOST }}
+          username: ${{ secrets.PRODUCTION_SSH_USER }}
           key: ${{ secrets.PRODUCTION_SSH_KEY }}
-          source: ".output/**"
-          target: "${{ secrets.PRODUCTION_PATH }}"
-          strip_components: 1
+          port: 21098
+          source: ".output"
+          target: ${{ secrets.PRODUCTION_SSH_PATH }}
 
-      - name: Restart app service
+      - name: Verify deployed files
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.PRODUCTION_HOST }}
-          username: ${{ secrets.PRODUCTION_USER }}
+          host: ${{ secrets.PRODUCTION_SSH_HOST }}
+          username: ${{ secrets.PRODUCTION_SSH_USER }}
           key: ${{ secrets.PRODUCTION_SSH_KEY }}
+          port: 21098
           script: |
-            cd ${{ secrets.PRODUCTION_PATH }}
-            pm2 restart metrocityenergy || pm2 start .output/server/index.mjs --name metrocityenergy
+            cd ${{ secrets.PRODUCTION_SSH_PATH }}
+            echo "=== DEPLOYED FILES ==="
+            ls -la .output
+            echo "=== SERVER ==="
+            ls -la .output/server
