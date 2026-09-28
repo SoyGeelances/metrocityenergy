@@ -35,7 +35,7 @@ jobs:
           if-no-files-found: error
 
       - name: Deploy build via SSH
-        uses: appleboy/scp-action@v0.1.10
+        uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.PRODUCTION_SSH_HOST }}
           username: ${{ secrets.PRODUCTION_SSH_USER }}
