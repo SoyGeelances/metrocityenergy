@@ -27,6 +27,17 @@ jobs:
           NITRO_PRESET: node-server
         run: bun run build
 
+      - name: Inspect build output
+        run: |
+          echo "=== CURRENT DIRECTORY ==="
+          pwd
+          echo "=== ROOT ==="
+          ls -la
+          echo "=== OUTPUT ==="
+          ls -la .output || true
+          echo "=== SERVER ==="
+          ls -la .output/server || true
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
