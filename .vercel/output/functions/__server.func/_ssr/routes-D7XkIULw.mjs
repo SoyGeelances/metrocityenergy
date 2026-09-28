@@ -1,8 +1,8 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { r as ArrowRight } from "../_libs/lucide-react.mjs";
-import { t as ContactBand } from "./site-chrome-COSyFwqu.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-6OcEvh_3.js
+import { a as ArrowRight } from "../_libs/lucide-react.mjs";
+import { t as ContactBand } from "./site-chrome-DwY3NYra.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-D7XkIULw.js
 var import_jsx_runtime = require_jsx_runtime();
 var heroImage = "/assets/metro-energy-hero.jpg";
 var services = [
@@ -86,7 +86,7 @@ function HomePage() {
 								children: "We bring together energy expertise, disciplined development, and long-term stewardship to create infrastructure that performs for communities and partners."
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
-								to: "/about",
+								to: "/why-metro-city-energy",
 								className: "mt-8 inline-flex items-center gap-2 border-b-2 border-accent pb-2 text-xs font-bold uppercase text-primary",
 								children: ["Discover our approach ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowRight, { size: 16 })]
 							})

@@ -50,7 +50,7 @@ function HomePage() {
           <div className="max-w-3xl">
             <h2 className="font-display text-5xl font-bold leading-none text-primary sm:text-7xl">Delivering reliable energy solutions.</h2>
             <p className="mt-8 text-lg leading-8 text-muted-foreground">We bring together energy expertise, disciplined development, and long-term stewardship to create infrastructure that performs for communities and partners.</p>
-            <Link to="/about" className="mt-8 inline-flex items-center gap-2 border-b-2 border-accent pb-2 text-xs font-bold uppercase text-primary">Discover our approach <ArrowRight size={16} /></Link>
+            <Link to="/why-metro-city-energy" className="mt-8 inline-flex items-center gap-2 border-b-2 border-accent pb-2 text-xs font-bold uppercase text-primary">Discover our approach <ArrowRight size={16} /></Link>
           </div>
         </div>
       </div>

@@ -11,8 +11,11 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as AboutUsRouteImport } from './routes/about-us'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as WhatWeDoRouteImport } from './routes/what-we-do'
+import { Route as WhyMetroCityEnergyRouteImport } from './routes/why-metro-city-energy'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -24,9 +27,19 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutUsRoute = AboutUsRouteImport.update({
+  id: '/about-us',
+  path: '/about-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LeadershipRoute = LeadershipRouteImport.update({
+  id: '/leadership',
+  path: '/leadership',
   getParentRoute: () => rootRouteImport,
 } as any)
 const WhatWeDoRoute = WhatWeDoRouteImport.update({
@@ -34,39 +47,78 @@ const WhatWeDoRoute = WhatWeDoRouteImport.update({
   path: '/what-we-do',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WhyMetroCityEnergyRoute = WhyMetroCityEnergyRouteImport.update({
+  id: '/why-metro-city-energy',
+  path: '/why-metro-city-energy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/about-us': typeof AboutUsRoute
   '/contact': typeof ContactRoute
+  '/leadership': typeof LeadershipRoute
   '/what-we-do': typeof WhatWeDoRoute
+  '/why-metro-city-energy': typeof WhyMetroCityEnergyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/about-us': typeof AboutUsRoute
   '/contact': typeof ContactRoute
+  '/leadership': typeof LeadershipRoute
   '/what-we-do': typeof WhatWeDoRoute
+  '/why-metro-city-energy': typeof WhyMetroCityEnergyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/about-us': typeof AboutUsRoute
   '/contact': typeof ContactRoute
+  '/leadership': typeof LeadershipRoute
   '/what-we-do': typeof WhatWeDoRoute
+  '/why-metro-city-energy': typeof WhyMetroCityEnergyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/contact' | '/what-we-do'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/about-us'
+    | '/contact'
+    | '/leadership'
+    | '/what-we-do'
+    | '/why-metro-city-energy'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/contact' | '/what-we-do'
-  id: '__root__' | '/' | '/about' | '/contact' | '/what-we-do'
+  to:
+    | '/'
+    | '/about'
+    | '/about-us'
+    | '/contact'
+    | '/leadership'
+    | '/what-we-do'
+    | '/why-metro-city-energy'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/about-us'
+    | '/contact'
+    | '/leadership'
+    | '/what-we-do'
+    | '/why-metro-city-energy'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AboutUsRoute: typeof AboutUsRoute
   ContactRoute: typeof ContactRoute
+  LeadershipRoute: typeof LeadershipRoute
   WhatWeDoRoute: typeof WhatWeDoRoute
+  WhyMetroCityEnergyRoute: typeof WhyMetroCityEnergyRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -85,11 +137,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about-us': {
+      id: '/about-us'
+      path: '/about-us'
+      fullPath: '/about-us'
+      preLoaderRoute: typeof AboutUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/leadership': {
+      id: '/leadership'
+      path: '/leadership'
+      fullPath: '/leadership'
+      preLoaderRoute: typeof LeadershipRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/what-we-do': {
@@ -99,14 +165,24 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WhatWeDoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/why-metro-city-energy': {
+      id: '/why-metro-city-energy'
+      path: '/why-metro-city-energy'
+      fullPath: '/why-metro-city-energy'
+      preLoaderRoute: typeof WhyMetroCityEnergyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AboutUsRoute: AboutUsRoute,
   ContactRoute: ContactRoute,
+  LeadershipRoute: LeadershipRoute,
   WhatWeDoRoute: WhatWeDoRoute,
+  WhyMetroCityEnergyRoute: WhyMetroCityEnergyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -1,10 +1,10 @@
 import { n as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as useRouter, c as HeadContent, d as createRouter, f as Outlet, g as Link, h as createRootRouteWithContext, m as createFileRoute, p as lazyRouteComponent, s as Scripts } from "../_libs/@tanstack/react-router+[...].mjs";
-import { a as SiteHeader, i as SiteFooter } from "./site-chrome-COSyFwqu.mjs";
+import { a as SiteHeader, i as SiteFooter } from "./site-chrome-DwY3NYra.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-txrX0v4g.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DtdWbIk9.js
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-Wj5nVruF.css";
+var styles_default = "/assets/styles-DscyM4wL.css";
 function NotFoundComponent() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 		className: "flex min-h-screen items-center justify-center bg-background px-4",
@@ -70,7 +70,7 @@ function ErrorComponent({ error, reset }) {
 		})
 	});
 }
-var Route$4 = createRootRouteWithContext()({
+var Route$7 = createRootRouteWithContext()({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -128,7 +128,7 @@ function RootShell({ children }) {
 	});
 }
 function RootComponent() {
-	const { queryClient } = Route$4.useRouteContext();
+	const { queryClient } = Route$7.useRouteContext();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(QueryClientProvider, {
 		client: queryClient,
 		children: [
@@ -138,8 +138,8 @@ function RootComponent() {
 		]
 	});
 }
-var $$splitComponentImporter$3 = () => import("./routes-6OcEvh_3.mjs");
-var Route$3 = createFileRoute("/")({
+var $$splitComponentImporter$6 = () => import("./routes-D7XkIULw.mjs");
+var Route$6 = createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: "Metro City Energy | Powering the Urban Core" },
 		{
@@ -163,23 +163,23 @@ var Route$3 = createFileRoute("/")({
 			content: "summary_large_image"
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$3, "component")
+	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$2 = () => import("./about-629k576j.mjs");
-var Route$2 = createFileRoute("/about")({
+var $$splitComponentImporter$5 = () => import("./about--8VfinMz.mjs");
+var Route$5 = createFileRoute("/about")({
 	head: () => ({ meta: [
-		{ title: "About Us | Metro City Energy" },
+		{ title: "About Metro City Builders | Metro City Energy" },
 		{
 			name: "description",
-			content: "Learn how Metro City Energy approaches energy infrastructure with responsibility, collaboration, and long-term thinking."
+			content: "Metro City Builders brings more than two decades of experience in residential, commercial, and medical development throughout Southern California."
 		},
 		{
 			property: "og:title",
-			content: "About Metro City Energy"
+			content: "About Metro City Builders"
 		},
 		{
 			property: "og:description",
-			content: "Our approach to responsible, resilient energy infrastructure."
+			content: "A Los Angeles-based real estate investment and development firm with more than 20 years of experience."
 		},
 		{
 			property: "og:type",
@@ -190,10 +190,37 @@ var Route$2 = createFileRoute("/about")({
 			content: "summary_large_image"
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$2, "component")
+	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$1 = () => import("./contact-BSVGu7TN.mjs");
-var Route$1 = createFileRoute("/contact")({
+var $$splitComponentImporter$4 = () => import("./about-us-BYRTSXDI.mjs");
+var Route$4 = createFileRoute("/about-us")({
+	head: () => ({ meta: [
+		{ title: "About Us | Metro City Energy" },
+		{
+			name: "description",
+			content: "Learn about Metro City Builders, a Southern California real estate investment and development firm focused on long-term value and thoughtful community building."
+		},
+		{
+			property: "og:title",
+			content: "About Us | Metro City Energy"
+		},
+		{
+			property: "og:description",
+			content: "A long-term developer and investor in residential, mixed-use, and medical properties throughout Southern California."
+		},
+		{
+			property: "og:type",
+			content: "website"
+		},
+		{
+			name: "twitter:card",
+			content: "summary_large_image"
+		}
+	] }),
+	component: lazyRouteComponent($$splitComponentImporter$4, "component")
+});
+var $$splitComponentImporter$3 = () => import("./contact-BpGFoZhM.mjs");
+var Route$3 = createFileRoute("/contact")({
 	head: () => ({ meta: [
 		{ title: "Contact | Metro City Energy" },
 		{
@@ -217,10 +244,37 @@ var Route$1 = createFileRoute("/contact")({
 			content: "summary_large_image"
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$1, "component")
+	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter = () => import("./what-we-do-D0G7iMzJ.mjs");
-var Route = createFileRoute("/what-we-do")({
+var $$splitComponentImporter$2 = () => import("./leadership-Bm5BPUmo.mjs");
+var Route$2 = createFileRoute("/leadership")({
+	head: () => ({ meta: [
+		{ title: "Leadership | Metro City Energy" },
+		{
+			name: "description",
+			content: "Meet the leadership team behind Metro City Builders and its development strategy across Southern California."
+		},
+		{
+			property: "og:title",
+			content: "Leadership | Metro City Energy"
+		},
+		{
+			property: "og:description",
+			content: "Experienced leadership behind every development."
+		},
+		{
+			property: "og:type",
+			content: "website"
+		},
+		{
+			name: "twitter:card",
+			content: "summary_large_image"
+		}
+	] }),
+	component: lazyRouteComponent($$splitComponentImporter$2, "component")
+});
+var $$splitComponentImporter$1 = () => import("./what-we-do-IfSS6uG7.mjs");
+var Route$1 = createFileRoute("/what-we-do")({
 	head: () => ({ meta: [
 		{ title: "What We Do | Metro City Energy" },
 		{
@@ -244,31 +298,73 @@ var Route = createFileRoute("/what-we-do")({
 			content: "summary_large_image"
 		}
 	] }),
+	component: lazyRouteComponent($$splitComponentImporter$1, "component")
+});
+var $$splitComponentImporter = () => import("./why-metro-city-energy-DvZg0LBF.mjs");
+var Route = createFileRoute("/why-metro-city-energy")({
+	head: () => ({ meta: [
+		{ title: "Why Metro City Energy | Metro City Energy" },
+		{
+			name: "description",
+			content: "Learn how Metro City Energy approaches energy infrastructure with responsibility, collaboration, and long-term thinking."
+		},
+		{
+			property: "og:title",
+			content: "About Metro City Energy"
+		},
+		{
+			property: "og:description",
+			content: "Our approach to responsible, resilient energy infrastructure."
+		},
+		{
+			property: "og:type",
+			content: "website"
+		},
+		{
+			name: "twitter:card",
+			content: "summary_large_image"
+		}
+	] }),
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
 var rootRouteChildren = {
-	IndexRoute: Route$3.update({
+	IndexRoute: Route$6.update({
 		id: "/",
 		path: "/",
-		getParentRoute: () => Route$4
+		getParentRoute: () => Route$7
 	}),
-	AboutRoute: Route$2.update({
+	AboutRoute: Route$5.update({
 		id: "/about",
 		path: "/about",
-		getParentRoute: () => Route$4
+		getParentRoute: () => Route$7
 	}),
-	ContactRoute: Route$1.update({
+	AboutUsRoute: Route$4.update({
+		id: "/about-us",
+		path: "/about-us",
+		getParentRoute: () => Route$7
+	}),
+	ContactRoute: Route$3.update({
 		id: "/contact",
 		path: "/contact",
-		getParentRoute: () => Route$4
+		getParentRoute: () => Route$7
 	}),
-	WhatWeDoRoute: Route.update({
+	LeadershipRoute: Route$2.update({
+		id: "/leadership",
+		path: "/leadership",
+		getParentRoute: () => Route$7
+	}),
+	WhatWeDoRoute: Route$1.update({
 		id: "/what-we-do",
 		path: "/what-we-do",
-		getParentRoute: () => Route$4
+		getParentRoute: () => Route$7
+	}),
+	WhyMetroCityEnergyRoute: Route.update({
+		id: "/why-metro-city-energy",
+		path: "/why-metro-city-energy",
+		getParentRoute: () => Route$7
 	})
 };
-var routeTree = Route$4._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$7._addFileChildren(rootRouteChildren)._addFileTypes();
 var getRouter = () => {
 	const queryClient = new QueryClient();
 	return createRouter({

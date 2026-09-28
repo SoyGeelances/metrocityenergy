@@ -1,8 +1,8 @@
 import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link, l as useRouterState } from "../_libs/@tanstack/react-router+[...].mjs";
-import { n as Menu, r as ArrowRight, t as X } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/site-chrome-COSyFwqu.js
+import { a as ArrowRight, n as Menu, t as X } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/site-chrome-DwY3NYra.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var logo = "/logo-metro-city-energy.webp";
@@ -13,7 +13,11 @@ var navItems = [
 	},
 	{
 		label: "About Us",
-		to: "/about"
+		to: "/about-us"
+	},
+	{
+		label: "Why Metro City Energy",
+		to: "/why-metro-city-energy"
 	},
 	{
 		label: "What We Do",
@@ -95,13 +99,20 @@ function SiteFooter() {
 					children: "Company"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "mt-5 flex flex-col gap-3 text-sm",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						to: "/about",
-						children: "About Us"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						to: "/what-we-do",
-						children: "What We Do"
-					})]
+					children: [
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/about-us",
+							children: "About Us"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/leadership",
+							children: "Leadership"
+						}),
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: "/what-we-do",
+							children: "What We Do"
+						})
+					]
 				})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "eyebrow",
 					children: "Connect"
@@ -111,7 +122,7 @@ function SiteFooter() {
 						to: "/contact",
 						children: "Contact"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "mailto:contact@metrocityenergy.com",
+						href: "mailto:info@metrocitybuilders.com",
 						children: "Email us"
 					})]
 				})] })]
@@ -119,8 +130,11 @@ function SiteFooter() {
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "border-t border-border px-5 py-6 sm:px-8",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-				className: "mx-auto flex max-w-7xl flex-col gap-2 text-xs uppercase text-muted-foreground sm:flex-row sm:justify-between",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "© 2026 Metro City Energy" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Energy built for what comes next" })]
+				className: "mx-auto flex max-w-7xl flex-col gap-2 text-xs text-muted-foreground sm:flex-row sm:justify-between",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "© 2026 Metro City Energy. All rights reserved." }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", { children: ["Developed by ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					style: { color: "#1c2967" },
+					children: "Geelances"
+				})] })]
 			})
 		})]
 	});

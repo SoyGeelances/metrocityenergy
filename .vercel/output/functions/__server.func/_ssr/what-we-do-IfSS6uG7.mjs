@@ -1,6 +1,6 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { r as PageHero, t as ContactBand } from "./site-chrome-COSyFwqu.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/what-we-do-D0G7iMzJ.js
+import { r as PageHero, t as ContactBand } from "./site-chrome-DwY3NYra.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/what-we-do-IfSS6uG7.js
 var import_jsx_runtime = require_jsx_runtime();
 var heroImage = "/assets/grid-modernization.jpg";
 var capabilities = [

@@ -6,7 +6,8 @@ const logo = "/logo-metro-city-energy.webp";
 
 const navItems = [
   { label: "Home", to: "/" },
-  { label: "About Us", to: "/about" },
+  { label: "About Us", to: "/about-us" },
+  { label: "Why Metro City Energy", to: "/why-metro-city-energy" },
   { label: "What We Do", to: "/what-we-do" },
   { label: "Contact", to: "/contact" },
 ] as const;
@@ -79,7 +80,8 @@ export function SiteFooter() {
           <div>
             <p className="eyebrow">Company</p>
             <div className="mt-5 flex flex-col gap-3 text-sm">
-              <Link to="/about">About Us</Link>
+              <Link to="/about-us">About Us</Link>
+              <Link to="/leadership">Leadership</Link>
               <Link to="/what-we-do">What We Do</Link>
             </div>
           </div>
@@ -87,15 +89,15 @@ export function SiteFooter() {
             <p className="eyebrow">Connect</p>
             <div className="mt-5 flex flex-col gap-3 text-sm">
               <Link to="/contact">Contact</Link>
-              <a href="mailto:contact@metrocityenergy.com">Email us</a>
+              <a href="mailto:info@metrocitybuilders.com">Email us</a>
             </div>
           </div>
         </div>
       </div>
       <div className="border-t border-border px-5 py-6 sm:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-2 text-xs uppercase text-muted-foreground sm:flex-row sm:justify-between">
-          <span>© 2026 Metro City Energy</span>
-          <span>Energy built for what comes next</span>
+        <div className="mx-auto flex max-w-7xl flex-col gap-2 text-xs text-muted-foreground sm:flex-row sm:justify-between">
+          <span>© 2026 Metro City Energy. All rights reserved.</span>
+          <span>Developed by <span style={{ color: "#1c2967" }}>Geelances</span></span>
         </div>
       </div>
     </footer>
