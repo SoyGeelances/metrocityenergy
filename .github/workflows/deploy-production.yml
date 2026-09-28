@@ -1,0 +1,54 @@
+name: Production Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy-production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build for Node/Nitro production
+        env:
+          NITRO_PRESET: node-server
+        run: bun run build
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrocityenergy-production-build
+          path: .output/
+          if-no-files-found: error
+
+      - name: Deploy via SSH
+        uses: appleboy/scp-action@v0.1.10
+        with:
+          host: ${{ secrets.PRODUCTION_HOST }}
+          username: ${{ secrets.PRODUCTION_USER }}
+          key: ${{ secrets.PRODUCTION_SSH_KEY }}
+          source: ".output/**"
+          target: "${{ secrets.PRODUCTION_PATH }}"
+          strip_components: 1
+
+      - name: Restart app service
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.PRODUCTION_HOST }}
+          username: ${{ secrets.PRODUCTION_USER }}
+          key: ${{ secrets.PRODUCTION_SSH_KEY }}
+          script: |
+            cd ${{ secrets.PRODUCTION_PATH }}
+            pm2 restart metrocityenergy || pm2 start .output/server/index.mjs --name metrocityenergy
