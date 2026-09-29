@@ -44,6 +44,7 @@ jobs:
           name: metrocityenergy-production-build
           path: .output/
           if-no-files-found: error
+          include-hidden-files: true
 
       - name: Deploy build via SSH
         uses: appleboy/scp-action@v0.1.7
