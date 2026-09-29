@@ -1,10 +1,10 @@
 import { n as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as useRouter, c as HeadContent, d as createRouter, f as Outlet, g as Link, h as createRootRouteWithContext, m as createFileRoute, p as lazyRouteComponent, s as Scripts } from "../_libs/@tanstack/react-router+[...].mjs";
-import { a as SiteHeader, i as SiteFooter } from "./site-chrome-DwY3NYra.mjs";
+import { a as SiteHeader, i as SiteFooter } from "./site-chrome-C9yvyshB.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-DtdWbIk9.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-Z0DuAOUT.js
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-DscyM4wL.css";
+var styles_default = "/assets/styles-DGXs4BbV.css";
 function NotFoundComponent() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 		className: "flex min-h-screen items-center justify-center bg-background px-4",
@@ -138,7 +138,7 @@ function RootComponent() {
 		]
 	});
 }
-var $$splitComponentImporter$6 = () => import("./routes-D7XkIULw.mjs");
+var $$splitComponentImporter$6 = () => import("./routes-wxRYAOLK.mjs");
 var Route$6 = createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: "Metro City Energy | Powering the Urban Core" },
@@ -165,7 +165,7 @@ var Route$6 = createFileRoute("/")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$5 = () => import("./about--8VfinMz.mjs");
+var $$splitComponentImporter$5 = () => import("./about-C1xs9RHg.mjs");
 var Route$5 = createFileRoute("/about")({
 	head: () => ({ meta: [
 		{ title: "About Metro City Builders | Metro City Energy" },
@@ -192,7 +192,7 @@ var Route$5 = createFileRoute("/about")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./about-us-BYRTSXDI.mjs");
+var $$splitComponentImporter$4 = () => import("./about-us-CDE5846J.mjs");
 var Route$4 = createFileRoute("/about-us")({
 	head: () => ({ meta: [
 		{ title: "About Us | Metro City Energy" },
@@ -246,7 +246,7 @@ var Route$3 = createFileRoute("/contact")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./leadership-Bm5BPUmo.mjs");
+var $$splitComponentImporter$2 = () => import("./leadership-DM-h9dgG.mjs");
 var Route$2 = createFileRoute("/leadership")({
 	head: () => ({ meta: [
 		{ title: "Leadership | Metro City Energy" },
@@ -273,7 +273,7 @@ var Route$2 = createFileRoute("/leadership")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./what-we-do-IfSS6uG7.mjs");
+var $$splitComponentImporter$1 = () => import("./what-we-do-DmajMKvM.mjs");
 var Route$1 = createFileRoute("/what-we-do")({
 	head: () => ({ meta: [
 		{ title: "What We Do | Metro City Energy" },
@@ -300,7 +300,7 @@ var Route$1 = createFileRoute("/what-we-do")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./why-metro-city-energy-DvZg0LBF.mjs");
+var $$splitComponentImporter = () => import("./why-metro-city-energy-DDooB0-m.mjs");
 var Route = createFileRoute("/why-metro-city-energy")({
 	head: () => ({ meta: [
 		{ title: "Why Metro City Energy | Metro City Energy" },

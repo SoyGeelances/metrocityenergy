@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as ContactBand } from "./site-chrome-DwY3NYra.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/leadership-Bm5BPUmo.js
+import { t as ContactBand } from "./site-chrome-C9yvyshB.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/leadership-DM-h9dgG.js
 var import_jsx_runtime = require_jsx_runtime();
 var heroImage = "/assets/team-mcb.webp";
 var leadership = [
@@ -78,7 +78,7 @@ function LeadershipPage() {
 			})
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-			className: "bg-background px-5 py-16 sm:px-8 lg:py-20",
+			className: "bg-background px-8 py-16 sm:px-8 lg:py-20",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "mx-auto grid max-w-7xl gap-6 md:grid-cols-2 xl:grid-cols-4",
 				children: leadership.slice(3).map((person) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -86,7 +86,7 @@ function LeadershipPage() {
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 						src: person.image,
 						alt: person.name,
-						className: "h-72 w-full object-cover sm:h-80"
+						className: "h-52 w-full object-cover sm:h-80"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 						className: "p-5 text-center",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {

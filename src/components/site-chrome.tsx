@@ -7,6 +7,7 @@ const logo = "/logo-metro-city-energy.webp";
 const navItems = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/about-us" },
+  { label: "Leadership", to: "/leadership" },
   { label: "Why Metro City Energy", to: "/why-metro-city-energy" },
   { label: "What We Do", to: "/what-we-do" },
   { label: "Contact", to: "/contact" },
@@ -20,7 +21,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-background">
       <div className="mx-auto grid h-24 max-w-[92rem] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:px-8">
         <Link to="/" className="flex min-w-0 items-center" aria-label="Metro City Energy home">
-          <img src={logo} alt="Metro City Energy" className="h-[4.5rem] w-auto shrink-0 object-contain" />
+          <img src={logo} alt="Metro City Energy" className="h-12 w-auto shrink-0 object-contain sm:h-[4.5rem]" />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
@@ -71,7 +72,7 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-background">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 py-14 sm:px-8 lg:grid-cols-[1.4fr_1fr] lg:py-20">
         <div>
-          <img src={logo} alt="Metro City Energy" className="h-28 w-auto object-contain" loading="lazy" />
+          <img src={logo} alt="Metro City Energy" className="h-20 w-auto object-contain sm:h-28" loading="lazy" />
           <p className="mt-5 max-w-md text-sm leading-7 text-muted-foreground">
             Energy infrastructure shaped for stronger cities, reliable systems, and enduring value.
           </p>
