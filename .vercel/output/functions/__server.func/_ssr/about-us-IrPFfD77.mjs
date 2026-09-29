@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as ContactBand } from "./site-chrome-C9yvyshB.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-us-CDE5846J.js
+import { t as ContactBand } from "./site-chrome-CuWBmziF.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/about-us-IrPFfD77.js
 var import_jsx_runtime = require_jsx_runtime();
 var heroImage = "/assets/solar-energy-mce.webp";
 var teamImage = "/assets/people.jpg";

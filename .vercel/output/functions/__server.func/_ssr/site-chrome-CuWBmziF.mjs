@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link, l as useRouterState } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as ArrowRight, n as Menu, t as X } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/site-chrome-C9yvyshB.js
+//#region node_modules/.nitro/vite/services/ssr/assets/site-chrome-CuWBmziF.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var logo = "/logo-metro-city-energy.webp";
@@ -38,7 +38,7 @@ function SiteHeader() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("header", {
 		className: "sticky top-0 z-50 border-b border-border bg-background",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "mx-auto grid h-24 max-w-[92rem] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:px-8",
+			className: "mx-auto grid h-20 max-w-[92rem] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:px-8",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 					to: "/",
