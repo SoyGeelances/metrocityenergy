@@ -49,22 +49,22 @@ jobs:
       - name: Deploy build via SSH
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ secrets.PRODUCTION_SSH_HOST }}
-          username: ${{ secrets.PRODUCTION_SSH_USER }}
+          host: ${{ secrets.PRODUCTION_HOST }}
+          username: ${{ secrets.PRODUCTION_USER }}
           key: ${{ secrets.PRODUCTION_SSH_KEY }}
           port: 21098
           source: ".output"
-          target: ${{ secrets.PRODUCTION_SSH_PATH }}
+          target: ${{ secrets.PRODUCTION_PATH }}
 
       - name: Verify deployed files
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.PRODUCTION_SSH_HOST }}
-          username: ${{ secrets.PRODUCTION_SSH_USER }}
+          host: ${{ secrets.PRODUCTION_HOST }}
+          username: ${{ secrets.PRODUCTION_USER }}
           key: ${{ secrets.PRODUCTION_SSH_KEY }}
           port: 21098
           script: |
-            cd ${{ secrets.PRODUCTION_SSH_PATH }}
+            cd ${{ secrets.PRODUCTION_PATH }}
             echo "=== DEPLOYED FILES ==="
             ls -la .output
             echo "=== SERVER ==="
