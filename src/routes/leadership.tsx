@@ -57,11 +57,11 @@ function LeadershipPage() {
         </div>
       </div>
 
-      <section className="bg-background px-5 py-16 sm:px-8 lg:py-20">
+      <section className="bg-background px-8 py-16 sm:px-8 lg:py-20">
         <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 xl:grid-cols-4">
           {leadership.slice(3).map((person) => (
             <div key={person.name} className="border border-border bg-card">
-              <img src={person.image} alt={person.name} className="h-72 w-full object-cover sm:h-80" />
+              <img src={person.image} alt={person.name} className="h-52 w-full object-cover sm:h-80" />
               <div className="p-5 text-center">
                 <div className="font-display text-2xl font-bold text-primary">{person.name}</div>
                 {person.role && <div className="mt-1 text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">{person.role}</div>}

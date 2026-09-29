@@ -1,6 +1,6 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { n as NumberedItem, r as PageHero, t as ContactBand } from "./site-chrome-DwY3NYra.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/why-metro-city-energy-DvZg0LBF.js
+import { n as NumberedItem, r as PageHero, t as ContactBand } from "./site-chrome-C9yvyshB.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/why-metro-city-energy-DDooB0-m.js
 var import_jsx_runtime = require_jsx_runtime();
 var heroImage = "/assets/renewable-integration.jpg";
 function AboutPage() {

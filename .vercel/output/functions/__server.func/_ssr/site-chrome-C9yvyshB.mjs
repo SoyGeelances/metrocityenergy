@@ -2,7 +2,7 @@ import { r as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link, l as useRouterState } from "../_libs/@tanstack/react-router+[...].mjs";
 import { a as ArrowRight, n as Menu, t as X } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/site-chrome-DwY3NYra.js
+//#region node_modules/.nitro/vite/services/ssr/assets/site-chrome-C9yvyshB.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var logo = "/logo-metro-city-energy.webp";
@@ -14,6 +14,10 @@ var navItems = [
 	{
 		label: "About Us",
 		to: "/about-us"
+	},
+	{
+		label: "Leadership",
+		to: "/leadership"
 	},
 	{
 		label: "Why Metro City Energy",
@@ -43,7 +47,7 @@ function SiteHeader() {
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 						src: logo,
 						alt: "Metro City Energy",
-						className: "h-[4.5rem] w-auto shrink-0 object-contain"
+						className: "h-12 w-auto shrink-0 object-contain sm:h-[4.5rem]"
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
@@ -87,7 +91,7 @@ function SiteFooter() {
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 				src: logo,
 				alt: "Metro City Energy",
-				className: "h-28 w-auto object-contain",
+				className: "h-20 w-auto object-contain sm:h-28",
 				loading: "lazy"
 			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-5 max-w-md text-sm leading-7 text-muted-foreground",
