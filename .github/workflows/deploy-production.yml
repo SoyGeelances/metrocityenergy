@@ -51,7 +51,7 @@ jobs:
         with:
           host: ${{ secrets.PRODUCTION_HOST }}
           username: ${{ secrets.PRODUCTION_USER }}
-          key: ${{ secrets.PRODUCTION_KEY }}
+          key: ${{ secrets.PRODUCTION_SSH_KEY }}
           port: 21098
           source: ".output"
           target: ${{ secrets.PRODUCTION_PATH }}
@@ -61,7 +61,7 @@ jobs:
         with:
           host: ${{ secrets.PRODUCTION_HOST }}
           username: ${{ secrets.PRODUCTION_USER }}
-          key: ${{ secrets.PRODUCTION_KEY }}
+          key: ${{ secrets.PRODUCTION_SSH_KEY }}
           port: 21098
           script: |
             cd ${{ secrets.PRODUCTION_PATH }}
