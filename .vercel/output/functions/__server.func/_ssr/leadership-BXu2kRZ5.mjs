@@ -1,7 +1,7 @@
 import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as ContactBand } from "./site-chrome-C9yvyshB.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/leadership-DM-h9dgG.js
+import { t as ContactBand } from "./site-chrome-CuWBmziF.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/leadership-BXu2kRZ5.js
 var import_jsx_runtime = require_jsx_runtime();
 var heroImage = "/assets/team-mcb.webp";
 var leadership = [
@@ -78,22 +78,22 @@ function LeadershipPage() {
 			})
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
-			className: "bg-background px-8 py-16 sm:px-8 lg:py-20",
+			className: "bg-background px-4 py-12 sm:px-8 sm:py-16 lg:py-20",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-				className: "mx-auto grid max-w-7xl gap-6 md:grid-cols-2 xl:grid-cols-4",
+				className: "mx-auto grid max-w-7xl grid-cols-1 gap-4 min-[321px]:max-[1023px]:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-8",
 				children: leadership.slice(3).map((person) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "border border-border bg-card",
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 						src: person.image,
 						alt: person.name,
-						className: "h-52 w-full object-cover sm:h-80"
+						className: "mx-auto h-[180px] w-full max-w-[280px] object-contain min-[480px]:h-[280px]"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "p-5 text-center",
+						className: "p-3 text-center sm:p-5",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "font-display text-2xl font-bold text-primary",
+							className: "break-words font-display text-lg font-bold text-primary sm:text-xl lg:text-2xl",
 							children: person.name
 						}), person.role && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "mt-1 text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground",
+							className: "mt-1 text-[0.58rem] uppercase leading-5 tracking-[0.12em] text-muted-foreground sm:text-[0.68rem] sm:tracking-[0.18em] lg:tracking-[0.2em]",
 							children: person.role
 						})]
 					})]

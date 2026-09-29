@@ -57,14 +57,14 @@ function LeadershipPage() {
         </div>
       </div>
 
-      <section className="bg-background px-8 py-16 sm:px-8 lg:py-20">
-        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-2 xl:grid-cols-4">
+      <section className="bg-background px-4 py-12 sm:px-8 sm:py-16 lg:py-20">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 min-[321px]:max-[1023px]:grid-cols-2 sm:gap-6 lg:grid-cols-4 lg:gap-8">
           {leadership.slice(3).map((person) => (
             <div key={person.name} className="border border-border bg-card">
-              <img src={person.image} alt={person.name} className="h-52 w-full object-cover sm:h-80" />
-              <div className="p-5 text-center">
-                <div className="font-display text-2xl font-bold text-primary">{person.name}</div>
-                {person.role && <div className="mt-1 text-[0.68rem] uppercase tracking-[0.2em] text-muted-foreground">{person.role}</div>}
+              <img src={person.image} alt={person.name} className="mx-auto h-[180px] w-full max-w-[280px] object-contain min-[480px]:h-[280px]" />
+              <div className="p-3 text-center sm:p-5">
+                <div className="break-words font-display text-lg font-bold text-primary sm:text-xl lg:text-2xl">{person.name}</div>
+                {person.role && <div className="mt-1 text-[0.58rem] uppercase leading-5 tracking-[0.12em] text-muted-foreground sm:text-[0.68rem] sm:tracking-[0.18em] lg:tracking-[0.2em]">{person.role}</div>}
               </div>
             </div>
           ))}

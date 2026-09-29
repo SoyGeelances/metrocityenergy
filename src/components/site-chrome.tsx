@@ -19,7 +19,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background">
-      <div className="mx-auto grid h-24 max-w-[92rem] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:px-8">
+      <div className="mx-auto grid h-20 max-w-[92rem] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:px-8">
         <Link to="/" className="flex min-w-0 items-center" aria-label="Metro City Energy home">
           <img src={logo} alt="Metro City Energy" className="h-12 w-auto shrink-0 object-contain sm:h-[4.5rem]" />
         </Link>
